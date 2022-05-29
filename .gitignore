@@ -1,2 +1,6 @@
-*.exe
-/.vscode
+*
+!*/
+
+!*.cpp
+!*.md
+!*.txt
