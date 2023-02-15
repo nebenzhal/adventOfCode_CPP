@@ -1,2 +1,2 @@
-# Learning CPP through "advent of code"
-idk if this will be effective but whatever 
+# Learning C++ through "Advent of Code"
+g++ -std=c++20
