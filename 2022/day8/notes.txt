@@ -1,0 +1,25 @@
+*visible from one direciton is enought, i should aim to 
+check from the least amount of directions needed 
+(to avoid needless iterations through the line)
+
+lines -> array<string>
+
+horizCheck():
+- itter through string, for each num(char, ascii val)
+check if char[i] - char[i-1] > 0 (left->right)
+    if fails(blocked):
+    itter through string backwards (i=string.len,i>string.len, --i)
+    check if char[i] - char[i-1] > 0 (left->right)
+
+std::cout << i << ' ' << line[i] - '0' << ' ' << line[x] - '0' << '\n';
+
+---Part One---
+1695
+---Part Two---
+287040
+
+2ND TRY:
+
+function checker (2dVect (vertLine (vector of pointers),HorzLine (vector of pointers)), the number to be checked), and checks wether its visible.
+
+iterate through file, putting everything into 2d vector of all chars. call function on each number that isnt (line0,lineLast) or (char[0],char[last])
